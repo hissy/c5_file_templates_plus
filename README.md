@@ -1,4 +1,4 @@
-# Page Templates plus
+# File Templates plus
 
 ![icon](https://raw.github.com/hissy/c5_file_templates_plus/master/hissy_file_templates/icon.png)  
 Additional File block templates
