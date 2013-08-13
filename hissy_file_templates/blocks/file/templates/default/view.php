@@ -31,7 +31,8 @@ if ($fp->canViewFile()) {
 <br /><small><?php echo $fv->getDescription()?></small>
 <?php endif;?>
 <?php if (isset($displayFileName) && isset($displayFileDescription)) : ?>
-<br /><small><?php echo $fv->getFileName()?> / <?php echo $fv->getDescription()?></small>
+<br /><small><?php echo $fv->getFileName();
+if ($fv->getDescription() != '') echo ' / ' . $fv->getDescription(); ?></small>
 <?php endif;?>
 </p>
 <?php	
