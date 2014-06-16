@@ -15,5 +15,6 @@ $displayFileType = 1;
 $displayFileSize = 1;
 $displayFileName = 1;
 $displayFileDescription = 1;
+$displayFileDateAdded = 1;
 
 include('default/view.php');

@@ -34,6 +34,9 @@ if ($fp->canViewFile()) {
 <br /><small><?php echo $fv->getFileName();
 if ($fv->getDescription() != '') echo ' / ' . $fv->getDescription(); ?></small>
 <?php endif;?>
+<?php if (isset($displayFileDateAdded)) : ?>
+<br /><small><?php echo t('Added')?>:<?php echo Loader::helper('date')->date(DATE_APP_GENERIC_MDYT, strtotime($fv->getDateAdded()))?></small>
+<?php endif;?>
 </p>
 <?php	
 }
